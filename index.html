@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GlueDarwin</title>
+
+<style>
+:root{
+    --bg:#17181a;
+    --fg:#f5f5f7;
+    --border:#303136;
+    --muted:#9fa0a7;
+    --card:#1f2024;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    background:var(--bg);
+    color:var(--fg);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",sans-serif;
+}
+
+.wrapper{
+    max-width:900px;
+    margin:auto;
+    padding:2rem;
+}
+
+header{
+    border-bottom:1px solid var(--border);
+    padding-bottom:1rem;
+    margin-bottom:2rem;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:600;
+    letter-spacing:-0.03em;
+}
+
+.tagline{
+    color:var(--muted);
+    margin-top:.4rem;
+}
+
+.hero{
+    margin:4rem 0;
+}
+
+.hero h1{
+    font-size:3.2rem;
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-0.04em;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    max-width:700px;
+    color:var(--muted);
+}
+
+.button{
+    display:inline-block;
+    margin-top:1.5rem;
+    padding:.8rem 1.3rem;
+    border:1px solid #45464c;
+    text-decoration:none;
+    color:var(--fg);
+    transition:background .15s ease;
+}
+
+.button:hover{
+    background:#28292d;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+    margin:3rem 0;
+}
+
+.card{
+    border:1px solid var(--border);
+    padding:1.2rem;
+    background:var(--card);
+}
+
+.card h3{
+    margin-bottom:.5rem;
+    font-size:1.05rem;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+.section{
+    margin:4rem 0;
+}
+
+.section h2{
+    margin-bottom:1rem;
+    font-size:1.8rem;
+    letter-spacing:-0.03em;
+}
+
+.section p{
+    color:var(--muted);
+}
+
+.code{
+    margin-top:1rem;
+    background:#1b1c20;
+    border:1px solid var(--border);
+    padding:1rem;
+    overflow:auto;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    color:#d7d7db;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    padding-top:1.5rem;
+    margin-top:4rem;
+    color:var(--muted);
+}
+
+@media (max-width:700px){
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .wrapper{
+        padding:1.25rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<header>
+    <div class="logo">GlueDarwin</div>
+    <div class="tagline">
+        A lightweight desktop and server operating system.
+    </div>
+</header>
+
+<section class="hero">
+
+    <h1>
+        Open desktop computing, inspired by Darwin.
+    </h1>
+
+    <p>
+        GlueDarwin is a fast and practical operating system designed
+        for both desktop and server environments. It combines a
+        lightweight userland, a familiar workflow and an open
+        development model focused on usability and performance.
+    </p>
+
+    <a href="#" class="button">Download</a>
+
+</section>
+
+<section class="grid">
+
+    <div class="card">
+        <h3>Fast</h3>
+        <p>
+            Lightweight components, efficient userland and minimal overhead.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Toybox</h3>
+        <p>
+            Compact command line utilities for modern systems.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>XFCE Desktop</h3>
+        <p>
+            Customized XFCE environment with a clean macOS-inspired workflow.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>MacPorts</h3>
+        <p>
+            Thousands of open source applications available through MacPorts.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Desktop Ready</h3>
+        <p>
+            Suitable for development, browsing and daily computing.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Server Ready</h3>
+        <p>
+            Stable enough for servers, homelabs and infrastructure workloads.
+        </p>
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Not XNU</h2>
+
+    <p>
+        GlueDarwin is not based on Apple's XNU kernel.
+        It follows its own direction while preserving the openness,
+        flexibility and accessibility that made Darwin interesting
+        to developers.
+    </p>
+
+</section>
+
+<section class="section">
+
+    <h2>An Open Future</h2>
+
+    <p>
+        Modern macOS is a proprietary operating system.
+        GlueDarwin explores a different path: an open platform
+        inspired by Darwin's heritage, developed in public and
+        available to everyone.
+    </p>
+
+    <div class="code">
+$ uname -a
+
+GlueDarwin localhost 1.0 GENERIC
+
+Desktop • Server • Toybox • MacPorts
+    </div>
+
+</section>
+
+<footer>
+    Copyright © 2026 GlueDarwin Project
+</footer>
+
+</div>
+
+</body>
+</html>
