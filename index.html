@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,6 +97,7 @@ header{
     border:1px solid var(--border);
     padding:1.2rem;
     background:var(--card);
+    border-radius:8px;
 }
 
 .card h3{
@@ -104,6 +106,12 @@ header{
 
 .card p{
     color:var(--muted);
+}
+
+.forum-card{
+    box-shadow:
+        0 0 20px rgba(255,255,255,.06),
+        0 0 40px rgba(255,255,255,.03);
 }
 
 .section{
@@ -183,7 +191,10 @@ footer{
         performance and simplicity.
     </p>
 
-    <a href="#" class="button">Download</a>
+    <a href="https://github.com/gluedarwin/gluedarwin.github.io/releases"
+       class="button">
+        Download
+    </a>
 
 </section>
 
@@ -281,7 +292,9 @@ Desktop • Server • Toybox • MacPorts
         <div class="card">
             <h3>Reddit</h3>
             <p>
-                <a href="https://www.reddit.com/r/GlueDarwin/" target="_blank" rel="noopener">
+                <a href="https://www.reddit.com/r/GlueDarwin/"
+                   target="_blank"
+                   rel="noopener">
                     r/GlueDarwin
                 </a>
             </p>
@@ -290,7 +303,9 @@ Desktop • Server • Toybox • MacPorts
         <div class="card">
             <h3>Telegram</h3>
             <p>
-                <a href="https://t.me/thisismsdr" target="_blank" rel="noopener">
+                <a href="https://t.me/thisismsdr"
+                   target="_blank"
+                   rel="noopener">
                     @thisismsdr
                 </a>
             </p>
@@ -299,15 +314,32 @@ Desktop • Server • Toybox • MacPorts
             </p>
         </div>
 
+        <div class="card forum-card">
+            <h3>Forum</h3>
+
+            <p>
+                <a href="https://github.com/gluedarwin/gluedarwin.github.io/discussions"
+                   target="_blank"
+                   rel="noopener">
+                    GitHub Discussions
+                </a>
+            </p>
+
+            <p style="margin-top:.5rem;">
+                Community support, feedback and development discussions.
+            </p>
+        </div>
+
     </div>
 
 </section>
 
 <footer>
-    Copyright © 2026 GlueDarwin Project
+    2026 GlueDarwin Project
 </footer>
 
 </div>
 
 </body>
 </html>
+```
